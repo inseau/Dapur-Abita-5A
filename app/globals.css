@@ -163,6 +163,27 @@ textarea {
   width: 40px;
   height: 40px;
   flex-basis: 40px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+}
+
+.brand-lockup--auth .brand-mark__cake::before {
+  top: 13px;
+  width: 23px;
+  height: 6px;
+}
+
+.brand-lockup--auth .brand-mark__cake::after {
+  top: 19px;
+  width: 17px;
+  height: 13px;
+  border-radius: 3px 3px 6px 6px;
+}
+
+.brand-lockup--auth .brand-mark__cake span {
+  top: 7px;
+  width: 5px;
+  height: 5px;
 }
 
 .brand-lockup--auth .brand-lockup__copy {
@@ -260,7 +281,7 @@ textarea {
   min-height: 100vh;
   min-height: 100svh;
   place-items: center;
-  padding: 24px 16px;
+  padding: 8px 16px;
 }
 
 .login-card {
@@ -295,6 +316,18 @@ textarea {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
+}
+
+.login-card__heading {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+}
+
+.login-card__role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .form-field {
@@ -346,6 +379,7 @@ textarea.text-input {
 
 .login-card__register {
   display: flex;
+  align-self: flex-end;
   align-items: center;
   gap: 6px;
   color: var(--muted);
@@ -377,8 +411,9 @@ textarea.text-input {
 }
 
 .login-role-links .button {
-  min-height: 30px;
+  min-height: 44px;
   padding: 5px 14px;
+  border-radius: 999px;
 }
 
 .login-home-link {
